@@ -36,12 +36,11 @@ Do this **before** creating the branch — so the ticket reflects reality if the
 Branch name format:
 
 ```
-feature/DMI-XXX-<short-kebab-slug>
+feature/DMI-XXX
 ```
 
 - Prefix always `feature/` for now (single stage — dev only). Once staging/prod land, we'll add `hotfix/`, `release/`.
-- `DMI-XXX` = Linear ID, uppercase.
-- Slug = 3–6 words, lowercase, kebab-case, derived from the ticket title. Strip filler words ("de", "la", "the"). Keep it under ~60 chars total.
+- `DMI-XXX` = Linear ID, uppercase. **No slug, no title words appended** — the ticket ID alone is the branch name, full stop.
 
 Examples:
 
@@ -115,7 +114,7 @@ Refs DMI-20
 ### 4.1 Push
 
 ```bash
-git push -u origin feature/DMI-XXX-slug
+git push -u origin feature/DMI-XXX
 ```
 
 ### 4.2 Create the PR via `gh`
@@ -195,7 +194,7 @@ The worktree is created off the current `HEAD`, so ensure you're on `main` first
 git checkout main && git pull --ff-only
 ```
 
-Then invoke the tool. Inside the worktree, follow §2–§5 unchanged — branch name is still `feature/DMI-XXX-slug`.
+Then invoke the tool. Inside the worktree, follow §2–§5 unchanged — branch name is still `feature/DMI-XXX`.
 
 ### 7.3 Cleanup
 
