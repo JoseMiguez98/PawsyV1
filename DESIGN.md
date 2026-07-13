@@ -1,351 +1,224 @@
----
-version: alpha
-name: Pawsy
-description: Design system for Pawsy — a mobile platform for reporting lost pets, adoptions, and community alerts in Latin America.
-colors:
-  primary: "#E8613A"
-  primary-light: "#F4906F"
-  primary-pale: "#FDE8E0"
-  secondary: "#3D6B2E"
-  secondary-light: "#5A8C45"
-  secondary-pale: "#E8F3E3"
-  surface: "#FFFFFF"
-  surface-warm: "#FDF6F3"
-  surface-muted: "#F5F5F5"
-  on-surface: "#1A1A1A"
-  on-surface-secondary: "#5C5C5C"
-  on-surface-tertiary: "#9E9E9E"
-  border: "#E8E0DC"
-  error: "#C0392B"
-  warning: "#E8613A"
-  success: "#3D6B2E"
-  badge-perdido: "#C0392B"
-  badge-avistado: "#4A7FC1"
-  badge-adoptable: "#3D6B2E"
-  badge-urgente: "#E8613A"
-  neutral-100: "#1A1A1A"
-  neutral-80: "#5C5C5C"
-  neutral-60: "#9E9E9E"
-  neutral-20: "#E8E0DC"
-  neutral-10: "#F5F5F5"
-typography:
-  display:
-    fontFamily: Inter
-    fontSize: 28px
-    fontWeight: 700
-    lineHeight: 1.2
-    letterSpacing: -0.02em
-  headline-lg:
-    fontFamily: Inter
-    fontSize: 22px
-    fontWeight: 700
-    lineHeight: 1.25
-  headline-md:
-    fontFamily: Inter
-    fontSize: 18px
-    fontWeight: 700
-    lineHeight: 1.3
-  headline-sm:
-    fontFamily: Inter
-    fontSize: 16px
-    fontWeight: 600
-    lineHeight: 1.3
-  body-lg:
-    fontFamily: Inter
-    fontSize: 15px
-    fontWeight: 400
-    lineHeight: 1.6
-  body-md:
-    fontFamily: Inter
-    fontSize: 14px
-    fontWeight: 400
-    lineHeight: 1.55
-  body-sm:
-    fontFamily: Inter
-    fontSize: 13px
-    fontWeight: 400
-    lineHeight: 1.5
-  label-lg:
-    fontFamily: Inter
-    fontSize: 13px
-    fontWeight: 600
-    lineHeight: 1
-    letterSpacing: 0.02em
-  label-md:
-    fontFamily: Inter
-    fontSize: 11px
-    fontWeight: 600
-    lineHeight: 1
-    letterSpacing: 0.06em
-  label-caps:
-    fontFamily: Inter
-    fontSize: 10px
-    fontWeight: 700
-    lineHeight: 1
-    letterSpacing: 0.1em
-  caption:
-    fontFamily: Inter
-    fontSize: 12px
-    fontWeight: 400
-    lineHeight: 1.4
-rounded:
-  none: 0px
-  sm: 6px
-  md: 12px
-  lg: 16px
-  xl: 24px
-  full: 9999px
-spacing:
-  xs: 4px
-  sm: 8px
-  md: 12px
-  lg: 16px
-  xl: 24px
-  2xl: 32px
-  3xl: 48px
-  screen-padding: 16px
-  card-padding: 16px
-  section-gap: 24px
-components:
-  button-primary:
-    backgroundColor: "{colors.primary}"
-    textColor: "{colors.surface}"
-    typography: "{typography.label-lg}"
-    rounded: "{rounded.full}"
-    padding: "14px 24px"
-    height: 52px
-  button-primary-hover:
-    backgroundColor: "{colors.primary-light}"
-  button-secondary:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.primary}"
-    typography: "{typography.label-lg}"
-    rounded: "{rounded.full}"
-    padding: "14px 24px"
-    height: 52px
-  button-secondary-dark:
-    backgroundColor: "{colors.secondary}"
-    textColor: "{colors.surface}"
-    typography: "{typography.label-lg}"
-    rounded: "{rounded.full}"
-    padding: "14px 24px"
-    height: 52px
-  button-ghost:
-    backgroundColor: "transparent"
-    textColor: "{colors.primary}"
-    typography: "{typography.label-lg}"
-  chip-active:
-    backgroundColor: "{colors.secondary-pale}"
-    textColor: "{colors.secondary}"
-    typography: "{typography.label-md}"
-    rounded: "{rounded.full}"
-    padding: "8px 16px"
-  chip-inactive:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.on-surface-secondary}"
-    typography: "{typography.label-md}"
-    rounded: "{rounded.full}"
-    padding: "8px 16px"
-  chip-filter-active:
-    backgroundColor: "{colors.primary}"
-    textColor: "{colors.surface}"
-    typography: "{typography.label-md}"
-    rounded: "{rounded.full}"
-    padding: "8px 16px"
-  badge-perdido:
-    backgroundColor: "{colors.badge-perdido}"
-    textColor: "{colors.surface}"
-    typography: "{typography.label-caps}"
-    rounded: "{rounded.sm}"
-    padding: "3px 8px"
-  badge-avistado:
-    backgroundColor: "{colors.badge-avistado}"
-    textColor: "{colors.surface}"
-    typography: "{typography.label-caps}"
-    rounded: "{rounded.sm}"
-    padding: "3px 8px"
-  badge-adoptable:
-    backgroundColor: "{colors.badge-adoptable}"
-    textColor: "{colors.surface}"
-    typography: "{typography.label-caps}"
-    rounded: "{rounded.full}"
-    padding: "4px 10px"
-  badge-urgente:
-    backgroundColor: "{colors.badge-urgente}"
-    textColor: "{colors.surface}"
-    typography: "{typography.label-caps}"
-    rounded: "{rounded.full}"
-    padding: "4px 10px"
-  card:
-    backgroundColor: "{colors.surface}"
-    rounded: "{rounded.lg}"
-    padding: "{spacing.card-padding}"
-  card-featured:
-    backgroundColor: "{colors.surface}"
-    rounded: "{rounded.xl}"
-    padding: "0px"
-  input:
-    backgroundColor: "{colors.surface-muted}"
-    textColor: "{colors.on-surface}"
-    typography: "{typography.body-md}"
-    rounded: "{rounded.lg}"
-    padding: "14px 16px"
-    height: 52px
-  input-focus:
-    backgroundColor: "{colors.surface}"
-  tab-bar:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.on-surface-tertiary}"
-    height: 64px
-  tab-bar-active:
-    textColor: "{colors.secondary}"
-  tab-bar-fab:
-    backgroundColor: "{colors.primary}"
-    size: 56px
-    rounded: "{rounded.full}"
-  stat-card:
-    backgroundColor: "{colors.surface-muted}"
-    textColor: "{colors.on-surface}"
-    rounded: "{rounded.md}"
-    padding: "12px 16px"
+# DESIGN.md — Pawsy Design System
+
+> This document is the source of truth for building UI in Pawsy. Before
+> creating or modifying any screen/component, read this file alongside
+> `tokens.ts`. If a value isn't here, don't invent it — either derive it
+> explicitly following the rules in section 6, or ask.
+
 ---
 
-# PawsyApp Design System
+## 1. Guiding principle
 
-## Overview
+Pawsy is an emotional-emergency app disguised as a pet directory: people
+open it because they lost someone they love, or because they can help
+someone else get their pet back. The visual system has to hold TWO
+registers at once:
 
-PawsyApp is a community-driven mobile platform built around emotional urgency and trust. Every screen communicates warmth, care, and immediacy — the product is used by people who have lost a pet or want to help one find a home.
+- **Functional calm** (search, filter, browse shelters) → neutral,
+  compact, efficient tone.
+- **Human urgency** (reporting a lost pet, seeing a "Lost" status) →
+  warmer tone, more breathing room, stronger visual hierarchy.
 
-The visual language is **warm and approachable**, anchored in a salmon-orange primary (`#E8613A`) that conveys urgency without aggression, paired with a earthy forest green (`#3D6B2E`) that signals safety, health, and positive outcomes. Backgrounds are soft off-whites and warm creams, giving the UI an organic, non-clinical feel.
+This distinction is the reason behind the system's single most important
+rule: **not every component uses the same radius or the same level of
+emphasis.** See section 3.
 
-The design targets Latin American markets (Argentina, El Salvador visible in mocks), mobile-first (iOS/Android via React Native/Expo), with a single-column layout optimized for one-handed use. The tone is emotionally resonant — this is not a utility app, it's a community lifeline for pets and their people.
+---
 
-## Colors
+## 2. Color palette
 
-The palette is built around two semantic anchors: urgency/action (orange) and resolution/safety (green).
+All exact values live in `tokens.ts` (`colors`). Usage summary:
 
-- **Primary `#E8613A`:** The salmon-orange used for all primary CTAs, the FAB, active nav indicators, and urgency states. It reads as warm and caring, not alarming.
-- **Primary Light `#F4906F`:** Hover/pressed state for primary elements.
-- **Primary Pale `#FDE8E0`:** Tinted surfaces for CTA sections, alert backgrounds, and community prompt cards.
-- **Secondary `#3D6B2E`:** Forest green used for positive outcomes — "Adoptable" badges, "Encontrado" states, the "Conocer mascotas" button, active tab highlights. Signals life and resolution.
-- **Secondary Pale `#E8F3E3`:** Soft green background for success cards (e.g., "Mina ha vuelto a casa").
-- **Surface `#FFFFFF`:** Card backgrounds and modal surfaces.
-- **Surface Warm `#FDF6F3`:** Page-level background — a warm near-white that avoids coldness.
-- **Surface Muted `#F5F5F5`:** Input field backgrounds and stat chips.
-- **On Surface `#1A1A1A`:** Primary text — near-black for maximum legibility.
-- **On Surface Secondary `#5C5C5C`:** Secondary text, metadata, descriptions.
-- **On Surface Tertiary `#9E9E9E`:** Placeholders, inactive icons, captions.
-- **Border `#E8E0DC`:** Warm-tinted dividers and card outlines.
-- **Badge Perdido `#C0392B`:** Deep red used exclusively for "PERDIDO" status badges — conveys urgency and loss.
-- **Badge Avistado `#4A7FC1`:** Blue used for "AVISTADO" — neutral sighting, not urgent but actionable.
+| Token | Hex | Usage |
+|---|---|---|
+| `primary` | `#e77d67` | Brand color. CTAs, FAB, active chip, logo. **This is the canonical primary** — not `primaryLight`. |
+| `primaryLight` | `#e88d67` | Only inside `gradients.primary` or hover/press states. Never as a component's base color. |
+| `primaryTint` | `#fdece9` | Icon backgrounds, soft borders, avatars. |
+| `bgPrimary` | `#faf9f8` | Screen background. |
+| `bgSecondary` | `#ebe9e7` | Inputs, "recessed" surfaces. |
+| `bgSurface` | `#ffffff` | Cards. |
+| `foreground` | `#1a1c1c` | Primary text. |
+| `foregroundSecondary` | `#55433e` | Secondary text / metadata. |
+| `dangerBg` / `dangerFg` | `#ffdad6` / `#93000a` | "Lost" status, alerts, urgency. |
+| `successBg` / `successFg` | `#dcedc8` / `#1b3411` | "Found/Seen" status, confirmations, safety card. |
 
-## Typography
+**Rules:**
+- `danger` is used for anything related to a **lost** pet or an
+  irreversible action. `success` is for **good outcomes** (found, up for
+  adoption successfully, shelter open). Don't mix the two meanings.
+  There's a second green tone (`successBgAlt` = `#cbecbd`) inherited from
+  the first screen — reserve it for small badges (e.g. "Open" on a shelter
+  card), not for large cards like the safety card.
+- `warning` and `info` are derived (they don't come from Figma). Only use
+  them if a real use case shows up (e.g. "your report is pending review").
+  If added those states in Figma later, the actual values values replace the
+  derived ones — update this doc at that point.
+- Dark mode exists in the tokens but **isn't validated against any real
+  design**. If dark mode gets turned on in the app, treat those values as a
+  starting point, not a closed spec.
 
-All type is set in **Inter** — a humanist sans-serif that balances warmth with legibility at mobile sizes. The type scale is compact and functional, designed for dense information (pet listings, reports, alerts) while remaining scannable.
+---
 
-- **Display (28px/700):** Hero headlines like "Ayúdanos a traerlos de vuelta a casa." — large, bold, emotional.
-- **Headline LG (22px/700):** Section titles and screen titles like "Comunidad", "Manchitas".
-- **Headline MD (18px/700):** Card titles, pet names in listings.
-- **Headline SM (16px/600):** Sub-section headings like "Mascotas Perdidas", "Su Historia".
-- **Body LG (15px/400):** Primary body copy — bio text, descriptions.
-- **Body MD (14px/400):** Secondary body copy — card descriptions, metadata.
-- **Body SM (13px/400):** Tight secondary content, helper text.
-- **Label LG (13px/600):** Button text, interactive labels with slight tracking.
-- **Label MD (11px/600):** Filter chips, tab labels, form section headers.
-- **Label Caps (10px/700):** Status badges (PERDIDO, AVISTADO, ADOPTABLE, URGENTE) — all caps, maximum tracking.
-- **Caption (12px/400):** Timestamps, location metadata, fine print.
+## 3. Radius — a 2-tier system (non-negotiable rule)
 
-## Layout
+This is where consistency breaks most easily, so it's spelled out
+explicitly:
 
-Single-column mobile layout with a consistent `16px` horizontal screen padding. Content is organized in vertical sections with `24px` gaps between them.
+```
+radius.md   (16px) → DEFAULT. Buttons, inputs, general-purpose cards,
+                       any component that repeats N times in a list or
+                       grid (e.g. cards in a feed).
+radius.lg   (24px) → Large containing cards, featured sections.
+radius.pill (48px) → ONLY for 1-2 "hero" elements per screen: the
+                       photo-upload input, the main CTA of a
+                       high-emotional-impact flow (reporting a lost pet,
+                       emergency). NEVER apply it to a list of N items.
+radius.full (9999px) → Chips, avatars, FAB, status pills.
+```
 
-The bottom tab bar is fixed with a floating action button (FAB) centered at the paw icon — the primary action shortcut for reporting. Cards use `16px` internal padding with `16px` border radius. Images in cards bleed edge-to-edge within their container.
+**Quick test before using `radius.pill`**: does this component repeat more
+than once on the screen? If yes, it's `md` or `lg`, not `pill`. The lost
+pets feed is the canonical example of "why not use pill everywhere": it's
+N repeated cards, so the container uses `lg` and the internal buttons use
+`md` — 48px would have felt flat and hierarchy-less.
 
-The layout follows an **8px base grid** — all spacing values are multiples of 4px, with 8px as the practical minimum between related elements.
+---
 
-Key layout zones:
-- **Header:** 56px fixed top bar with logo + right-side actions
-- **Screen padding:** 16px horizontal on all content
-- **Card gap:** 12–16px between cards in a list
-- **Section gap:** 24px between content sections
-- **Bottom tab bar:** 64px, with FAB extending above it
+## 4. Gradient — usage rule (non-negotiable)
 
-## Elevation & Depth
+`gradients.primary` (`#e88d67 → #f2a68d`, 135deg) exists and is part of the
+system, but it has a single usage rule:
 
-Depth is achieved through **tonal layering** rather than heavy shadows. The warm off-white page background (`#FDF6F3`) creates natural contrast with pure white cards. Cards use a subtle shadow (`0 2px 8px rgba(0,0,0,0.06)`) to lift them off the page without drama.
+> **Max 1-2 "hero" CTAs per app use the gradient. Everything else uses
+> solid `colors.primary`.**
 
-Alert cards with left-border accents (e.g., the red left border on urgent community alerts) use border color rather than shadow to convey priority. The FAB uses a slightly stronger shadow (`0 4px 12px rgba(232,97,58,0.35)`) tinted with the primary color to feel grounded.
+Correct examples: the "Publish Report" button in the report-a-lost-pet
+flow, the central nav FAB. Incorrect example: using it on the "I saw this
+pet" button in every card of a feed (that's N repeated gradients = visual
+noise, and in RN each instance requires `expo-linear-gradient` — not free
+to maintain).
 
-## Shapes
+If you're unsure whether a button "deserves" the gradient: it doesn't. The
+gradient is for a flow's single most emotionally-loaded moment, not for
+every primary action.
 
-Shape language is **soft and friendly** — no sharp corners anywhere in the UI.
+---
 
-- **Full pill (`9999px`):** All CTA buttons, filter chips, status badges, FAB. The dominant shape language — everything interactive is pill-shaped.
-- **XL (`24px`):** Hero cards, featured pet cards with images. Generous rounding for large content containers.
-- **LG (`16px`):** Standard cards, modals, image containers within cards.
-- **MD (`12px`):** Input fields, secondary cards, stat chips.
-- **SM (`6px`):** PERDIDO/status badge chips that need to read as labels, not buttons.
+## 5. Typography
 
-Avoid mixing sharp corners with rounded ones in the same view. All inputs are rounded MD. All buttons are pill-shaped.
+One typeface: **Plus Jakarta Sans**. Hierarchy is built with weight and
+size, not by switching typefaces.
 
-## Components
+| Use | Size | Weight |
+|---|---|---|
+| Section heading | 24px | Extra Bold |
+| Card title / heading 1 | 20px | Extra Bold |
+| Main CTA | 16px | Bold |
+| Body / secondary buttons | 14px | Semi Bold / Bold |
+| Metadata (location, distance, time) | 12px | Medium (Bold if urgent/highlighted) |
+| Eyebrow / uppercase labels | 10px | Extra Bold, `letterSpacing: wide/widest` |
 
-### Buttons
+Tracking rule: large sizes (20-24px) get **negative** letter-spacing
+(`-0.5` to `-0.6`) to read tighter and more editorial; small uppercase
+labels (10-12px) get **positive** tracking (`0.5` to `1`) for legibility.
+Don't use neutral tracking in either case.
 
-Three button variants are used throughout the app:
+---
 
-**Primary** (`#E8613A`, pill): Used for the single most important action per screen — "Reportar Mascota", "Publicar Reporte", "Contactar para Adoptar", "Ver Ubicación". Always full-width or near-full-width at the bottom of a form/detail screen.
+## 6. How to derive a token that doesn't exist yet
 
-**Secondary Dark** (`#3D6B2E`, pill): Used for positive/adoption CTAs — "Conocer mascotas", "Ser Voluntario". Semantically distinct from urgency actions.
+This will come up often: a new design will need something that isn't in
+`tokens.ts` (a color, a size, a state). Derivation rule:
 
-**Ghost/Text** (transparent, primary text): Used for secondary navigation links — "Ver todos los reportes", "Explorar refugios", "Cancelar". No background, no border.
+1. **First check if something semantically equivalent already exists.**
+   Before inventing `colors.info2`, check whether `colors.info` already
+   covers the case.
+2. **Derive from the logic already present, not from a generic palette.**
+   Real example: Pawsy's shadows use a `primary` tint instead of pure black
+   (`rgba(231,125,103,0.12)` instead of `rgba(0,0,0,0.12)`) — any new
+   shadow should follow that same pattern, not add a generic gray.
+3. **Mark the origin in the comment.** Every new token in `tokens.ts` gets
+   `// [figma]` (comes literally from a design), `// [figma-pN]` (comes
+   from a specific screen — useful when screens conflict), or
+   `// [derived]` (inferred). This is what lets you audit later what's real
+   design vs. filler.
+4. **If two screens bring different values for the same thing (drift)**,
+   don't average them or just keep whichever you saw last. Document the
+   conflict explicitly and resolve it with an objective criterion
+   (contrast, legibility, hierarchy) — see `DESIGN_TOKENS.md` for the real
+   precedent of how `primary` (#e77d67 vs #e88d67) and the success green
+   were resolved.
 
-**Outline** (white background, primary border): Used for secondary actions alongside a primary button — "Compartir Perfil".
+---
 
-### Filter Chips
+## 7. Components — established patterns
 
-Horizontal scrollable chip rows for filtering — "Todos / Mensajes / Alertas Críticas", "Perdidos / Avistados / Refugios". Active state uses filled green (`secondary-pale` bg + `secondary` text) or filled primary depending on context. Inactive chips are outlined or plain text.
+### Card (e.g. shelter card, pet alert card)
+- `bgSurface` (white), `radius.lg` (24px), `shadows.card`.
+- Photo/image spans the full width, radius only on the top corners
+  (`topLeftRadius`/`topRightRadius`), not all 4.
+- Status badge overlaid on the bottom-left of the photo, `radius.full`,
+  semantic colors from section 2.
+- Favorite button (♡) overlaid top-right of the photo, white circle at 85%
+  opacity.
+- Content with 24px padding, full-width CTA at the end.
 
-### Status Badges
+### Primary button
+- Solid `colors.primary`, `radius.md` (16px) if repeated/list-context,
+  `radius.pill` only if it's the screen's hero CTA (see section 3).
+- White text, Bold, 14-16px.
+- Shadow: `shadows.button` (subtle elevation) or `shadows.cta` (hero CTA).
 
-Small pill or rounded-rect labels overlaid on images or inline in cards:
-- `PERDIDO` — red, all caps
-- `AVISTADO` — blue, all caps  
-- `ADOPTABLE` — green, all caps, pill shape
-- `URGENTE` — orange, all caps, pill shape
-- `BUSCANDO` / `ENCONTRADO` — contextual in profile reports
+### Chip / filter
+- Active: solid `colors.primary`, white Bold text.
+- Inactive: white `bgSurface`, `borderNeutral` border,
+  `foregroundSecondary` Semi Bold text.
+- Always `radius.full`.
 
-### Cards
+### Input
+- `bgSecondary` background, `radius.md` (16px) — or `radius.pill` only if
+  the whole form is "hero" type (see section 3).
+- Placeholder in `foregroundPlaceholder`.
 
-Two card densities:
-- **Featured card:** Full-width image (16:9 or taller) with rounded corners, pet info below. Used for "En Adopción" hero and refuge listings.
-- **List card:** Horizontal layout with square thumbnail (64×64, rounded LG) + text content. Used in community feed, nearby pets, profile reports.
+### Urgency badge
+- Combines a dot (`dot`, 6px, semantic color) + uppercase Extra Bold
+  10-11px text. The dot is information (indicates recency <24h), not
+  decoration — don't add it to non-urgent states.
 
-Community feed cards have a left accent border (4px solid, primary color) for urgent alerts.
+---
 
-### Input Fields
+## 8. Anti-patterns (things already tried and discarded)
 
-Rounded MD (`12px`), muted surface background (`#F5F5F5`), 52px height for comfortable touch targets. Labels are `label-caps` style above the field. Placeholder text is `on-surface-tertiary`. No visible border in default state — border appears on focus in primary color.
+- ❌ 48px radius on every input in a dense screen (tried in "Reportar
+  Mascota", decided to reserve it for the hero input only).
+- ❌ Gradient on repeated buttons in a list (see section 4).
+- ❌ Two shades of the same semantic color coexisting unresolved
+  (happened with `primary` and with `success` between the 2 original
+  screens — always resolve to a winner, don't leave it ambiguous).
+- ❌ Pure-black shadow (`rgba(0,0,0,x)`) instead of a `primary` tint —
+  breaks the system's visual signature.
 
-### Bottom Tab Bar
+---
 
-5 tabs: Home, Map, (FAB center), Alertas, Perfil. Active tab text uses `secondary` green. The center FAB is 56px salmon circle with paw icon, slightly elevated above the bar. Tab labels are `label-md`.
+## 9. Checklist before calling a new screen done
 
-### Stat Chips (Profile)
+- [ ] Did I use colors from `tokens.ts`, or invent a new hex? (if the
+      latter, document it with `[derived]` and justify why nothing
+      existing covered it)
+- [ ] Does each component's radius follow the section 3 rule (md/lg
+      default, pill only for hero)?
+- [ ] Is the gradient used on more than 1-2 elements on the screen? If so,
+      remove it.
+- [ ] Do danger/success states match the real meaning (lost vs. found),
+      not just "whichever color looked nice"?
+- [ ] Does the typography only use Plus Jakarta Sans with the section 5
+      scale?
+- [ ] If I added new tokens to `tokens.ts`, are they marked with
+      `[figma]`, `[figma-pN]`, or `[derived]`?
 
-Rounded MD chips showing numeric stats — "12 Reportes Activos", "05 Mascotas Adoptadas", "28 Favoritos". Muted surface background, centered text layout with number in `headline-md` and label in `label-caps` below.
+---
 
-## Do's and Don'ts
+## 10. Related files
 
-- **Do** use `primary` (`#E8613A`) only for the most urgent/primary action on each screen — one per screen maximum.
-- **Do** use `secondary` green for all positive resolution states — adoptions, found pets, volunteer actions.
-- **Don't** use red (`badge-perdido`) outside of "PERDIDO" status — it has a specific semantic meaning.
-- **Do** keep all interactive elements pill-shaped (`rounded.full`). Never use sharp corners on buttons.
-- **Don't** use more than two font weights on a single card.
-- **Do** use `surface-warm` (`#FDF6F3`) as the page background — never pure white at the screen level.
-- **Do** maintain sufficient contrast: primary text on surface is ~15:1, well above WCAG AA.
-- **Don't** place two primary (orange) buttons on the same screen.
-- **Do** overlay status badges on images rather than stacking them in separate rows — keeps the UI compact.
-- **Don't** use the green secondary color for urgent/negative states — it semantically means "resolved" or "positive".
-- **Do** use full-bleed images inside cards with clipping via `rounded.lg` or `rounded.xl` on the container.
-- **Don't** add heavy drop shadows — use tonal contrast and the warm background to create depth.
+- `tokens.config.js` — exact values (colors, typography, radius, spacing,
+  shadows, gradients, blur, opacity).

@@ -195,7 +195,7 @@ useQuery({ queryKey: ['reports', 'detail', id], queryFn: ... })
 
 ---
 
-## Communication with the backend (pawsy-api)
+## TOREVIEW: Communication with the backend (pawsy-api)
 
 - Base URL in environment variable: `EXPO_PUBLIC_API_URL`
 - All calls pass through `services/api.ts`
@@ -292,6 +292,35 @@ EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_...        # Clerk publishable key
 Never hardcode URLs or keys in the code. Always use `process.env.EXPO_PUBLIC_*`.
 
 ---
+
+## Decision Memory
+
+All important project decisions — architectural, technical, or design — go into a single file: `memory/MEMORY.md`. This is the persistent memory of the project as it evolves. Before writing, check if a similar decision already exists; if so, update/append instead of duplicating.
+
+### When to log
+Any time a real decision gets made or a conflict gets resolved:
+- Library/framework/tooling choices and why
+- State management, data flow, API/service architecture
+- Naming conventions, folder structure, build/test/CI setup
+- Deviations or clarifications of `DESIGN.md` (colors, typography, spacing, tokens)
+- NativeWind/Tailwind conventions adopted going forward
+- Conflicts between Figma and `DESIGN.md`, or between inconsistent screens
+- Any trade-off where a future agent/dev might ask "wait, why did we do it this way?"
+
+If in doubt, log it — cheap to write, expensive to lose.
+
+### Entry format
+```
+## [YYYY-MM-DD] Short title
+**Tags:** #architecture #state-mgmt #design #api #convention (pick relevant ones, add new tags freely)
+**Context:** what prompted this
+**Decision:** what was chosen
+**Alternatives considered:** (if any)
+**Rationale:** why
+```
+
+### Tags
+Use consistent, reusable tags so entries are greppable later (`grep '#design'`, `grep '#state-mgmt'`, etc.). Common ones so far: `#architecture`, `#state-mgmt`, `#api`, `#design`, `#convention`, `#tooling`, `#conflict-resolution`. Add new tags as needed rather than forcing a decision into an existing one.
 
 ## Related repos
 
